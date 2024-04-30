@@ -1,4 +1,5 @@
-﻿using static test.practice;
+﻿using test.Math;
+using static test.practice;
 
 namespace test
 {
@@ -25,6 +26,41 @@ namespace test
             name.firstName = "Ali Haider";
             name.lastName = "Akib";
             name.Introduce();
+
+
+            Calculator c1 = new Calculator();
+            double first, second;
+
+            first= double.Parse(Console.ReadLine());
+            char experssion = char.Parse(Console.ReadLine());
+            second = double.Parse(Console.ReadLine());
+
+
+            switch(experssion)
+            {
+                case '+':
+                    Console.WriteLine(c1.Add(first, second));
+                    break;
+
+                case '-':
+                    Console.WriteLine(c1.Substract(first, second));
+                    break;
+
+                case '*':
+                    Console.WriteLine(c1.Multiply(first, second));
+                    break;
+
+                case '/':
+                    Console.WriteLine(c1.Division(first, second));
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid day of experssion");
+                    break;
+
+            }
+            
+
 
         }
     }

@@ -1,7 +1,10 @@
-﻿namespace test
+﻿using static test.practice;
+
+namespace test
 {
     internal class Program
     {
+
         static void Main(string[] args)
         {
 			try
@@ -16,6 +19,16 @@
             catch (Exception)
 			{
                 Console.WriteLine("The number could never be converted to a byte!");
-            }        }
+            }
+
+            person name = new person();
+            name.firstName = "Ali Haider";
+            name.lastName = "Akib";
+            name.Introduce();
+
+        }
     }
+
+
+
 }

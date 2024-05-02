@@ -59,7 +59,19 @@ namespace test
                     break;
 
             }
-            
+
+
+            genericPractice example = new genericPractice();
+
+            // Calling the generic method with different data types
+            int maxInt = example.Max(5, 10);
+            double maxDouble = example.Max(3.5, 7.8);
+            string maxString = example.Max("apple", "orange");
+
+            Console.WriteLine($"Max int: {maxInt}");
+            Console.WriteLine($"Max double: {maxDouble}");
+            Console.WriteLine($"Max string: {maxString}");
+
 
 
         }

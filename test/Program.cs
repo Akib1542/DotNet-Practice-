@@ -72,7 +72,17 @@ namespace test
             Console.WriteLine($"Max double: {maxDouble}");
             Console.WriteLine($"Max string: {maxString}");
 
+            var queue = new Queue<string>();
 
+            queue.Enqueue("Akib");
+            queue.Enqueue("Joy");
+            queue.Enqueue("Sakib");
+
+
+            foreach ( var item in queue  )
+            {
+                Console.WriteLine(item);
+            }
 
         }
     }

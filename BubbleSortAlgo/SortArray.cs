@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BubbleSortAlgo
 {
-    internal class SortArray<T>
+    internal class SortArray<T> where T : IComparable<T>
     {
             public void BubbleSort(T []? arra)
             {
@@ -14,12 +14,15 @@ namespace BubbleSortAlgo
                 {
                     for (int j = 0; j < arra.Length - i - 1; j++)
                     {
-                        if (((IComparable)arra[j]).CompareTo(arra[j + 1]) > 0)
+                        if (arra[j].CompareTo(arra[j + 1]) > 0)
                         {
                             swap(arra, j);
                         }
-                    }
+                    // for VS and C# compiler has no way knowing that the Type T implements the IComparable Interface
+                    // and that's why we shoud aware this to them by declaring  a constraint T type parameter
+                    // where T: IComparable
                 }
+            }
             }
 
 

@@ -8,7 +8,7 @@
             // this code is only for the declared data types not for the derived data types
             // for derived data types we have to use generics 
 
-            Object[] ara = new object[] {"pple","zapple","Apple","Banaana" };
+            string[] ara = new string[] {"pple","zapple","Apple","Banaana" };
             /*
             SortArray sortArr = new SortArray();
 
@@ -38,7 +38,7 @@
                 Console.WriteLine(obj);
             }
 
-            SortArray<Object> sss = new SortArray<Object>();
+            SortArray<string> sss = new SortArray<string>();
 
             sss.BubbleSort(ara);
 

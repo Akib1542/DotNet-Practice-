@@ -5,7 +5,9 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "test", "test\test.csproj", "{C112968D-AFEE-4CF8-A38A-E3F11396A70C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericProj", "GenericProj\GenericProj.csproj", "{ECD4B39C-D284-4327-855E-2B3E9858C9C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericProj", "GenericProj\GenericProj.csproj", "{ECD4B39C-D284-4327-855E-2B3E9858C9C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubbleSortAlgo", "BubbleSortAlgo\BubbleSortAlgo.csproj", "{C7E46069-F723-4D86-9C8C-DB32FA82919E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{ECD4B39C-D284-4327-855E-2B3E9858C9C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECD4B39C-D284-4327-855E-2B3E9858C9C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECD4B39C-D284-4327-855E-2B3E9858C9C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7E46069-F723-4D86-9C8C-DB32FA82919E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7E46069-F723-4D86-9C8C-DB32FA82919E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7E46069-F723-4D86-9C8C-DB32FA82919E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7E46069-F723-4D86-9C8C-DB32FA82919E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

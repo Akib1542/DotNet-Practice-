@@ -30,6 +30,9 @@
             };
             // For derived comparison one must be use the IComparable interface! means generics
 
+            SortArray sorAr = new SortArray();
+            sorAr.BubbleSort(arr);
+
             foreach(var obj in arr)
             {
                 Console.WriteLine((Person)obj);
@@ -39,6 +42,8 @@
             // by this system.object type C# manage to inherit all those datatypes
 
             // Now achive same functionality by using generics !
+            // and ofcourse generics is better than system.obj type procedure
+
 
         }
     }

@@ -9,5 +9,6 @@ namespace GenericProj
     internal interface GenericInterfaceCreate<T>
     {
         bool isEqual(T val1, T val2);
+        void print (List<T> list);
     }
 }

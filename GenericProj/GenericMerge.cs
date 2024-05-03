@@ -12,5 +12,13 @@ namespace GenericProj
         {
             return val1.Equals(val2);
         }
+
+        public void print(List<T> list)
+        {
+            foreach (T val in list)
+            {
+                Console.WriteLine(val);
+            }
+        }
     }
 }

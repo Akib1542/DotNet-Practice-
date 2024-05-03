@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace BubbleSortAlgo
 {
-    internal class SortArray
+    internal class SortArray<T>
     {
-            public void BubbleSort(Object[]? arra)
+            public void BubbleSort(T []? arra)
             {
                 for (int i = 0; i < arra.Length - 1; i++)
                 {
@@ -23,9 +23,9 @@ namespace BubbleSortAlgo
             }
 
 
-            public void swap(Object[] arra, int i)
+            public void swap(T[] arra, int i)
             {
-                Object temp = arra[i];
+                T temp = arra[i];
                 arra[i] = arra[i + 1];
                 arra[i + 1] = temp;
             }

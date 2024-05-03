@@ -9,7 +9,7 @@
             // for derived data types we have to use generics 
 
             Object[] ara = new object[] {"pple","zapple","Apple","Banaana" };
-
+            /*
             SortArray sortArr = new SortArray();
 
             sortArr.BubbleSort(ara);
@@ -19,7 +19,7 @@
             {
                 Console.WriteLine(obj);
             }
-
+            */
 
             Person[] arr = new Person[]
             {
@@ -30,12 +30,21 @@
             };
             // For derived comparison one must be use the IComparable interface! means generics
 
-            SortArray sorAr = new SortArray();
+            SortArray<Person> sorAr = new SortArray<Person>();
             sorAr.BubbleSort(arr);
 
             foreach(var obj in arr)
             {
-                Console.WriteLine((Person)obj);
+                Console.WriteLine(obj);
+            }
+
+            SortArray<Object> sss = new SortArray<Object>();
+
+            sss.BubbleSort(ara);
+
+            foreach (var obj in ara)
+            {
+                Console.WriteLine(obj);
             }
 
             // we achive this by system.object type

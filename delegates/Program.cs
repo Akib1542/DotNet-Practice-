@@ -8,7 +8,9 @@ namespace delegates
 
         static void Main(string[] args)
         {
-            LogDel logdel = new LogDel(LogTextToScreen);
+            Log log = new Log();
+
+            LogDel logdel = new LogDel(log.LogTextToScreen) ;
 
             Console.WriteLine("Name: ");
             var name = Console.ReadLine();
@@ -17,7 +19,12 @@ namespace delegates
             Console.ReadKey();
         }
 
-         static void LogTextToScreen(string text, DateTime datetime)
+       
+    }
+
+    public class Log()
+    {
+        public void LogTextToScreen(string text, DateTime datetime)
         {
             Console.WriteLine($"{datetime}: {text}");
         }
